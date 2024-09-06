@@ -11,7 +11,15 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-	/* --blue: #007bff;
+	/* colores primarios PuCo */
+	--primary: #5ee8c3;
+	--secondary: #593c8f;
+	/* colores secundarios PuCo */
+	--dark: #171738;
+	--cyan: #17a2b8;
+	--light: #dedede;
+
+	/* resto de colores pre establecidos */
 	--indigo: #6610f2;
 	--purple: #6f42c1;
 	--pink: #e83e8c;
@@ -20,26 +28,23 @@
 	--yellow: #ffc107;
 	--green: #28a745;
 	--teal: #20c997;
-	--cyan: #17a2b8;
+
 	--white: #fff;
 	--gray: #6c757d;
 	--gray-dark: #343a40;
-	--primary: #FFC600;
-	--secondary: #23A036;
+
 	--success: #28a745;
 	--info: #17a2b8;
 	--warning: #ffc107;
 	--danger: #dc3545;
-	--light: #F5F5F5;
-	--dark: #0a1026; */
+
 	--breakpoint-xs: 0;
 	--breakpoint-sm: 576px;
 	--breakpoint-md: 768px;
 	--breakpoint-lg: 992px;
 	--breakpoint-xl: 1200px;
-	--font-family-sans-serif: "Poppins", sans-serif;
-	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-		"Liberation Mono", "Courier New", monospace;
+	--font-family-sans-serif: "nunito", sans-serif;
+	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas;
 }
 
 *,
@@ -53,6 +58,18 @@ html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.fab {
+	color: var(--primary) !important;
+}
+
+.fa {
+	color: var(--primary) !important;
+}
+
+.fa-envelope-open {
+	color: var(--secondary) !important;
 }
 
 article,
@@ -70,11 +87,11 @@ section {
 
 body {
 	margin: 0;
-	font-family: "Poppins", sans-serif;
+	font-family: var(--font-family-sans-serif);
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
-	color: #593c8f;
+	color: var(--dark);
 	text-align: left;
 	background-color: #fff;
 }
@@ -97,12 +114,16 @@ h5,
 h6 {
 	margin-top: 0;
 	margin-bottom: 0.5rem;
-	color: #5ee8c3;
+	color: var(--primary);
 }
 
 p {
 	margin-top: 0;
 	margin-bottom: 1rem;
+}
+
+.m-0 {
+	color: var(--dark);
 }
 
 abbr[title],
@@ -381,13 +402,11 @@ template {
 	display: none !important;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-.h1,
 .h2,
 .h3,
 .h4,
@@ -396,7 +415,7 @@ h6,
 	margin-bottom: 0.5rem;
 	font-weight: 500;
 	line-height: 1.2;
-	color: #2891d6;
+	color: var(--secondary);
 }
 
 h1,
@@ -621,7 +640,7 @@ kbd kbd {
 pre {
 	display: block;
 	font-size: 87.5%;
-	color: #212529;
+	color: var(--dark);
 }
 
 pre code {
@@ -1703,7 +1722,6 @@ pre code {
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-	background-color: #ffefb8;
 }
 
 .table-primary th,
@@ -2213,7 +2231,7 @@ textarea.form-control {
 .form-control.is-valid {
 	border-color: #28a745;
 	padding-right: calc(1.5em + 0.75rem);
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+	background-image: url("../imagenes/imagenes/distribucion3.jpg");
 	background-repeat: no-repeat;
 	background-position: right calc(0.375em + 0.1875rem) center;
 	background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
@@ -2540,15 +2558,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-	color: #212529;
-	background-color: #ffc600;
-	border-color: #ffc600;
+	color: var(--dark);
+	background-color: var(--light);
+	border-color: var(--light);
 }
 
 .btn-primary:hover {
-	color: #212529;
-	background-color: #d9a800;
-	border-color: #cc9e00;
+	color: var(--dark);
+	background-color: var(--light);
+	border-color: var(--light);
 }
 
 .btn-primary:focus,
@@ -6754,18 +6772,18 @@ a.close.disabled {
 }
 
 .bg-primary {
-	background-color: #ffc600 !important;
+	background-color: var(--primary) !important;
 }
 
 a.bg-primary:hover,
 a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-	background-color: #cc9e00 !important;
+	background-color: var(--primary) !important;
 }
 
 .bg-secondary {
-	background-color: #23a036 !important;
+	background-color: var(--secondary) !important;
 }
 
 a.bg-secondary:hover,
@@ -9934,7 +9952,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-	color: #ffc600 !important;
+	color: var(--primary) !important;
 }
 
 a.text-primary:hover,
@@ -9943,7 +9961,7 @@ a.text-primary:focus {
 }
 
 .text-secondary {
-	color: #23a036 !important;
+	color: var(--secondary) !important;
 }
 
 a.text-secondary:hover,
@@ -10144,6 +10162,7 @@ h3,
 h5,
 .font-weight-semi-bold {
 	font-weight: 600 !important;
+	color: var(--dark);
 }
 
 h6,
@@ -10310,7 +10329,6 @@ h6,
 	border: none;
 	outline: none !important;
 	padding: 18px 20px 20px 28px;
-	background: #23a036;
 }
 
 .btn-play:before {
@@ -10323,7 +10341,7 @@ h6,
 	display: block;
 	width: 60px;
 	height: 60px;
-	background: #23a036;
+	background-color: var(--danger);
 	border-radius: 100%;
 	animation: pulse-border 1500ms ease-out infinite;
 }
@@ -10436,8 +10454,8 @@ h6,
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #23a036;
-	background: #ffc600;
+	color: var(--primary);
+	background-color: var(--secondary);
 	border-radius: 40px;
 	font-size: 22px;
 	opacity: 0.1;
