@@ -60,17 +60,25 @@ html {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.fa {
+	color: var(--secondary) !important;
+}
+
 .fab {
 	color: var(--primary) !important;
 }
 
-.fa {
+.fa-map-marker-alt{
 	color: var(--primary) !important;
 }
 
 .fa-envelope-open {
 	color: var(--secondary) !important;
 }
+.fa-phone-alt{
+	color: var(--primary) !important;
+}
+
 
 article,
 aside,
@@ -83,6 +91,10 @@ main,
 nav,
 section {
 	display: block;
+}
+
+.border-custom {
+	border-right-color: var(--primary) !important;
 }
 
 body {
@@ -123,6 +135,10 @@ p {
 }
 
 .m-0 {
+	color: var(--light);
+}
+
+.custom-color {
 	color: var(--dark);
 }
 
@@ -1719,10 +1735,11 @@ pre code {
 	background-color: rgba(0, 0, 0, 0.075);
 }
 
-.table-primary,
+/* .table-primary,
 .table-primary > th,
 .table-primary > td {
-}
+	background-color: var(--danger);
+} */
 
 .table-primary th,
 .table-primary td,
@@ -2600,14 +2617,14 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
 	color: #fff;
-	background-color: #23a036;
-	border-color: #23a036;
+	background-color: var(--secondary) !important;
+	border-color: var(--secondary) !important;
 }
 
 .btn-secondary:hover {
 	color: #fff;
-	background-color: #1c812b;
-	border-color: #1a7628;
+	background-color: var(--secondary) !important;
+	border-color: var(--secondary) !important;
 }
 
 .btn-secondary:focus,
@@ -6145,6 +6162,10 @@ a.close.disabled {
 	position: relative;
 	flex: 1 1 auto;
 	padding: 1rem;
+}
+
+.nobitFooter{
+	color: var(--primary);
 }
 
 .modal-footer {
@@ -9948,7 +9969,7 @@ button.bg-dark:focus {
 }
 
 .text-white {
-	color: #fff !important;
+	color: var(--light) !important;
 }
 
 .text-primary {
@@ -10150,7 +10171,7 @@ a.text-dark:focus {
 /********** Custom CSS ************/
 h1,
 .font-weight-bolder {
-	font-weight: 800 !important;
+	font-weight: 600 !important;
 }
 
 h2,
@@ -10454,8 +10475,8 @@ h6,
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: var(--primary);
-	background-color: var(--secondary);
+	color: var(--secondary);
+	background-color: var(--light);
 	border-radius: 40px;
 	font-size: 22px;
 	opacity: 0.1;
@@ -10560,7 +10581,8 @@ h6,
 	justify-content: center;
 	flex-direction: column;
 	border-radius: 0 5px 0 0;
-	background: #ffc600;
+	background-color: var(--primary) !important;
+	
 }
 
 .contact-form .help-block ul {

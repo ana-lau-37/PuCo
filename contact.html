@@ -37,15 +37,22 @@
 		<!-- Header Start -->
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-3 bg-secondary d-none d-lg-block">
+				<!-- Aumenté el ancho de la columna a col-lg-4 -->
+				<div class="col-lg-4 bg-secondary d-none d-lg-block">
 					<a
 						href=""
 						class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center"
+						style="
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+						"
 					>
-						<h1 class="m-0 display-3 text-primary">PuCo</h1>
+						<!-- Cambié el tamaño de la fuente a display-5 para reducir el tamaño del texto -->
+						<h1 class="m-2 display-5 text-primary">Puerto Compostela</h1>
 					</a>
 				</div>
-				<div class="col-lg-9">
+				<div class="col-lg-8">
 					<div class="row bg-dark d-none d-lg-flex">
 						<div class="col-lg-7 text-left text-white">
 							<div
@@ -61,19 +68,19 @@
 						</div>
 						<div class="col-lg-5 text-right">
 							<div class="d-inline-flex align-items-center pr-2">
-								<a class="text-primary p-2" href="http://www.facebook.com">
+								<a class="text-primary p-2" href="https://www.facebook.com/">
 									<i class="fab fa-facebook-f"></i>
 								</a>
-								<a class="text-primary p-2" href="http://www.twitter.com">
+								<a class="text-primary p-2" href="https://www.twitter.com/">
 									<i class="fab fa-twitter"></i>
 								</a>
-								<a class="text-primary p-2" href="http://www.linkedin.com">
+								<a class="text-primary p-2" href="https://www.linkedin.com/">
 									<i class="fab fa-linkedin-in"></i>
 								</a>
-								<a class="text-primary p-2" href="http://www.instgram.com">
+								<a class="text-primary p-2" href="https://www.instagram.com/">
 									<i class="fab fa-instagram"></i>
 								</a>
-								<a class="text-primary p-2" href="http://www.youtube.com">
+								<a class="text-primary p-2" href="https://www.youtube.com/">
 									<i class="fab fa-youtube"></i>
 								</a>
 							</div>
@@ -81,7 +88,8 @@
 					</div>
 					<nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
 						<a href="" class="navbar-brand d-block d-lg-none">
-							<h1 class="m-0 display-4 text-primary">PuCo</h1>
+							<!-- Cambié PuCo por Puerto Compostela también en la versión móvil -->
+							<h1 class="m-0 display-5 text-primary">Puerto Compostela</h1>
 						</a>
 						<button
 							type="button"
@@ -96,18 +104,16 @@
 							id="navbarCollapse"
 						>
 							<div class="navbar-nav mr-auto py-0">
-								<a href="index.html" class="nav-item nav-link">Inicio</a>
+								<a href="index.html" class="nav-item nav-link active">Inicio</a>
 								<a href="about.html" class="nav-item nav-link"
 									>Sobre Nosotros</a
 								>
 								<a href="service.html" class="nav-item nav-link">Servicios</a>
-								<a href="project.html" class="nav-item nav-link">Projectos</a>
-								<a href="contact.html" class="nav-item nav-link active"
-									>Contacto</a
-								>
+								<a href="project.html" class="nav-item nav-link">Proyectos</a>
+								<a href="contact.html" class="nav-item nav-link">Contacto</a>
 								<div class="nav-item dropdown">
 									<a
-										href="#"
+										href=""
 										class="nav-link dropdown-toggle"
 										data-toggle="dropdown"
 										>Tu empresa</a
@@ -120,9 +126,6 @@
 									</div>
 								</div>
 							</div>
-							<a href="" class="btn btn-primary mr-3 d-none d-lg-block"
-								>Ingresar</a
-							>
 						</div>
 					</nav>
 				</div>

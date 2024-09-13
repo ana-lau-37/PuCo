@@ -40,19 +40,24 @@
 		<!-- Header Start -->
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-3 bg-secondary d-none d-lg-block">
+				<div class="col-lg-4 bg-secondary d-none d-lg-block">
 					<a
 						href=""
 						class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center"
+						style="
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+						"
 					>
-						<h1 class="m-0 display-3 text-primary">PuCo</h1>
+						<h1 class="m-2 display-5 text-primary">Puerto Compostela</h1>
 					</a>
 				</div>
-				<div class="col-lg-9">
+				<div class="col-lg-8">
 					<div class="row bg-dark d-none d-lg-flex">
 						<div class="col-lg-7 text-left text-white">
 							<div
-								class="h-100 d-inline-flex align-items-center border-right border-primary py-2 px-3"
+								class="h-100 d-inline-flex align-items-center border-right border-custom py-2 px-3"
 							>
 								<i class="fa fa-envelope text-primary mr-2"></i>
 								<small>info@puertocompostela.com.ar</small>
@@ -84,7 +89,7 @@
 					</div>
 					<nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
 						<a href="" class="navbar-brand d-block d-lg-none">
-							<h1 class="m-0 display-4 text-primary">Puerto Compostela</h1>
+							<h1 class="m-0 display-5 text-primary">Puerto Compostela</h1>
 						</a>
 						<button
 							type="button"
@@ -99,12 +104,12 @@
 							id="navbarCollapse"
 						>
 							<div class="navbar-nav mr-auto py-0">
-								<a href="index.html" class="nav-item nav-link active">Incio</a>
+								<a href="index.html" class="nav-item nav-link active">Inicio</a>
 								<a href="about.html" class="nav-item nav-link"
 									>Sobre Nosotros</a
 								>
 								<a href="service.html" class="nav-item nav-link">Servicios</a>
-								<a href="project.html" class="nav-item nav-link">Projectos</a>
+								<a href="project.html" class="nav-item nav-link">Proyectos</a>
 								<a href="contact.html" class="nav-item nav-link">Contacto</a>
 								<div class="nav-item dropdown">
 									<a
@@ -121,9 +126,6 @@
 									</div>
 								</div>
 							</div>
-							<a href="" class="btn btn-primary mr-3 d-none d-lg-block"
-								>Ingresar</a
-							>
 						</div>
 					</nav>
 				</div>
@@ -140,21 +142,12 @@
 			>
 				<ol class="carousel-indicators">
 					<li
-						class="list"
 						data-target="#header-carousel"
 						data-slide-to="0"
 						class="active"
 					></li>
-					<li
-						class="list"
-						data-target="#header-carousel"
-						data-slide-to="1"
-					></li>
-					<li
-						class="list"
-						data-target="#header-carousel"
-						data-slide-to="2"
-					></li>
+					<li data-target="#header-carousel" data-slide-to="1"></li>
+					<li data-target="#header-carousel" data-slide-to="2"></li>
 				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
@@ -173,7 +166,6 @@
 								<h1 class="display-3 text-white mb-md-4">
 									Centro logístico a tu medida.
 								</h1>
-								<a href="" class="btn btn-primary">Ingresar</a>
 							</div>
 						</div>
 					</div>
@@ -193,7 +185,6 @@
 								<h1 class="display-3 text-white mb-md-4">
 									Centro logistico a tu medida.
 								</h1>
-								<a href="" class="btn btn-primary">Ingresar</a>
 							</div>
 						</div>
 					</div>
@@ -242,7 +233,7 @@
 						<i class="fa fa-3x fa-envelope-open custom-icon-color mr-4"></i>
 						<div>
 							<h5 class="mb-2">Email</h5>
-							<p class="m-0">info@puertocompostela.com.ar</p>
+							<p class="m-0 custom-color">info@puertocompostela.com.ar</p>
 						</div>
 					</div>
 				</div>
@@ -432,7 +423,7 @@
 									250
 								</h1>
 								<h6 class="font-weight-semi-bold mb-sm-4">
-									Projectos trerminados
+									Proyectos trerminados
 								</h6>
 							</div>
 						</div>
@@ -441,7 +432,7 @@
 						<div class="position-relative h-100 rounded overflow-hidden">
 							<img
 								class="position-absolute w-100 h-100"
-								src="imagenes/imagenes/distribucion1.jpg"
+								src="imagenes/JPG COLOR/PC-14.jpg"
 								style="object-fit: cover"
 							/>
 						</div>
@@ -809,7 +800,7 @@
 							><i class="fa fa-angle-right mr-2"></i>Servicios</a
 						>
 						<a class="text-white mb-2" href="project.html"
-							><i class="fa fa-angle-right mr-2"></i>Projectos</a
+							><i class="fa fa-angle-right mr-2"></i>Proyectos</a
 						>
 						<a class="text-white" href="contact.html"
 							><i class="fa fa-angle-right mr-2"></i>Contacto</a
@@ -842,8 +833,9 @@
 			<div class="row">
 				<div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
 					<p class="m-0 text-white">
-						&copy; <a href="#">NOBIT</a>. Todos los derechos reservados.
-						Diseñado por NOBIT <a href="https://htmlcodex.com">HTML Codex</a>
+						&copy; <a class="nobitFooter" href="#">NOBIT</a>. Todos los derechos
+						reservados. Diseñado por NOBIT
+						<a class="nobitFooter" href="https://htmlcodex.com">HTML Codex</a>
 					</p>
 				</div>
 			</div>
