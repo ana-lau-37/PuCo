@@ -10606,6 +10606,7 @@ h6,
 	justify-content: center;
 	flex-direction: column;
 	border-radius: 0 5px 0 0;
+	color: var(--secondary);
 	background-color: var(--primary) !important;
 }
 
