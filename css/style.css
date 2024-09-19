@@ -53,6 +53,7 @@
 	box-sizing: border-box;
 }
 
+
 html {
 	font-family: sans-serif;
 	line-height: 1.15;
@@ -10263,7 +10264,7 @@ h6,
 	left: 0;
 	width: 45px;
 	height: 2px;
-	background: #ffc600;
+	background: var(--primary);
 }
 
 .section-title::after {
@@ -10273,7 +10274,7 @@ h6,
 	left: 0;
 	width: 45px;
 	height: 2px;
-	background: #23a036;
+	background: var(--secondary);
 }
 
 .navbar-light .navbar-nav .nav-link {
