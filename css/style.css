@@ -129,7 +129,7 @@ h5,
 h6 {
 	margin-top: 0;
 	margin-bottom: 0.5rem;
-	color: var(--primary);
+	color: var(--secondary);
 }
 
 p {
@@ -373,6 +373,22 @@ legend {
 	line-height: inherit;
 	color: inherit;
 	white-space: normal;
+}
+
+#portfolio-filters li {
+	color: var(--dark);
+	background-color: var(--primary);
+	border-color: var(--cyan);
+}
+
+#portfolio-filters li.active {
+	background-color: var(--secondary);
+	border-color: var(--secondary);
+}
+
+#portfolio-filters li:hover {
+	background-color: var(--light);
+	border-color: var(--light);
 }
 
 @media (max-width: 1200px) {
@@ -10456,11 +10472,11 @@ h6,
 	background-size: cover;
 }
 
-.bg-testimonial {
+/* .bg-testimonial {
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url(../img/carousel-3.jpg), no-repeat center center;
 	background-size: cover;
-}
+} */
 
 .owl-carousel .owl-nav {
 	position: absolute;
