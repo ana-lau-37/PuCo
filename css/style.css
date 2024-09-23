@@ -53,7 +53,6 @@
 	box-sizing: border-box;
 }
 
-
 html {
 	font-family: sans-serif;
 	line-height: 1.15;
@@ -383,7 +382,7 @@ legend {
 }
 
 #portfolio-filters li.active {
-	background-color: var(--secondary);
+	background-color: var(--cyan);
 	border-color: var(--secondary);
 }
 
@@ -2632,7 +2631,7 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-	box-shadow: 0 0 0 0.2rem rgba(222, 174, 6, 0.5);
+	box-shadow: 0 0 0 0.2rem --cyan;
 }
 
 .btn-secondary {
@@ -2650,24 +2649,24 @@ fieldset:disabled a.btn {
 .btn-secondary:focus,
 .btn-secondary.focus {
 	color: #fff;
-	background-color: #1c812b;
-	border-color: #1a7628;
-	box-shadow: 0 0 0 0.2rem rgba(68, 174, 84, 0.5);
+	background-color: var(--secondary) !important;
+	border-color: var(--secondary) !important;
+	box-shadow: 0 0 0 0.2rem var(--secondary) !important;
 }
 
 .btn-secondary.disabled,
 .btn-secondary:disabled {
 	color: #fff;
-	background-color: #23a036;
-	border-color: #23a036;
+	background-color: var(--secondary) !important;
+	border-color: var(--secondary) !important;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active,
 .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
 	color: #fff;
-	background-color: #1a7628;
-	border-color: #186c24;
+	background-color: var(--secondary) !important;
+	border-color: var(--secondary) !important;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active:focus,
@@ -2883,8 +2882,7 @@ fieldset:disabled a.btn {
 
 .btn-dark {
 	color: #fff;
-	background-color: #0a1026;
-	border-color: #0a1026;
+	border-color: var(--primary);
 }
 
 .btn-dark:hover {
@@ -2925,6 +2923,7 @@ fieldset:disabled a.btn {
 .btn-outline-primary {
 	color: #ffc600;
 	border-color: #ffc600;
+	background-color: var(--danger);
 }
 
 .btn-outline-primary:hover {
@@ -3519,7 +3518,7 @@ input[type="button"].btn-block {
 .dropdown-item:active {
 	color: #fff;
 	text-decoration: none;
-	background-color: #ffc600;
+	background-color: var(--secondary);
 }
 
 .dropdown-item.disabled,
