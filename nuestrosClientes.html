@@ -1,7 +1,8 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <head>
+	<head>
 		<meta charset="utf-8" />
 		<title>Puerto Compostela</title>
 		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -20,16 +21,13 @@
 
 		<!-- Font Awesome -->
 		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
 		/>
 
 		<!-- Libraries Stylesheet -->
-		<link href="js/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-		<link href="js/lightbox/css/lightbox.css" rel="stylesheet" />
+		<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+		<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
 		<!-- Customized Bootstrap Stylesheet -->
 		<link href="css/style.css" rel="stylesheet" />
@@ -49,14 +47,14 @@
 							text-overflow: ellipsis;
 						"
 					>
-						<h1 class="m-2 display-5 text-primary">Puerto Compostela</h1>
+						<h1 class="m-2 display-5 text-primary">Puerto Compostela</h1> <!-- ver si este titulo va o no -->
 					</a>
 				</div>
 				<div class="col-lg-8">
 					<div class="row bg-dark d-none d-lg-flex">
 						<div class="col-lg-7 text-left text-white">
 							<div
-								class="h-100 d-inline-flex align-items-center border-right border-custom py-2 px-3"
+								class="h-100 d-inline-flex align-items-center border-right border-custom border-custom py-2 px-3"
 							>
 								<i class="fa fa-envelope text-primary mr-2"></i>
 								<small>info@puertocompostela.com.ar</small>
@@ -109,14 +107,9 @@
 								>
 								<a href="service.html" class="nav-item nav-link">Servicios</a>
 								<a href="contact.html" class="nav-item nav-link">Contacto</a>
-								<a href="nuestrosClientes.html" class="nav-item nav-link">Nuestros Clientes</a>
+								<a href="nuestrosClientes.html" class="nav-item nav-link active">Nuestros Clientes</a>
 								<div class="nav-item dropdown">
-									<a
-										href="tuEmpresa.html"
-										class="nav-link dropdown-toggle active"
-										data-toggle="dropdown"
-										>Tu empresa</a
-									>
+									<a href="tuEmpresa.html" class="nav-item nav-link">Tu empresa</a>
 									<div class="dropdown-menu rounded-0 m-0">
 										<a href="sancorsalud.html" class="dropdown-item"
 											>Sancor Salud</a
@@ -132,10 +125,103 @@
 		</div>
 		<!-- Header End -->
 
-<body>
-    <h1>ACA IRÍA EL LOGIN?</h1>
+		<!-- Page Header Start -->
+		<div class="container-fluid bg-primary py-5 mb-5">
+			<div class="container py-5">
+				<div class="row align-items-center py-4">
+					<div class="col-md-6 text-center text-md-left">
+						<h1 class="display-4 mb-4 mb-md-0 text-secondary text-uppercase">
+							¡Sumate!
+						</h1>
+					</div>
+					<div class="col-md-6 text-center text-md-right">
+						<div class="d-inline-flex align-items-center">
+							<a class="btn btn-sm btn-outline-light" href="index.html"
+								>Inicio</a
+							>
+							<i class="fas fa-angle-double-right text-secondary mx-2"></i>
+							<a
+								class="btn btn-sm btn-outline-light"
+								href="nuestrosClientes.html">Nuestros Clientes</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Page Header End -->
 
-    <!-- Footer Start -->
+		<!-- Portfolio Start -->
+		<div class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-end mb-4">
+                <div class="col-lg-6">
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Nuestros clientes</h6>
+                    <h1 class="section-title mb-3">Animate a ser parte de Puerto Compostela</h1>
+					<p>Acá debería ir un texto explicativo de como estas empresas trabajan con Puerto Compostela.</p>
+                </div>
+                <!--  <div class="col-lg-6 text-center text-lg-right">
+                    <ul class="list-inline mb-2" id="portfolio-filters">
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Sancor Salud</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Puerto Compostela</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Otra empresa</li>
+                    </ul>
+                </div> -->
+            </div>
+            <div class="row m-0 portfolio-container">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item first">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img">
+                            <img class="img-fluid w-100" src="imagenes/logos empresas/images.png" alt="">
+                        </div>
+                        <div class="portfolio-text bg-primary">
+                            <h4 class="font-weight-bold mb-4">Sancor Salud</h4>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="btn btn-sm btn-secondary m-1" href="sancorsalud.html">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item second">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img">
+                            <img class="img-fluid w-100" src="imagenes/logos empresas/logo PuCo.jpg" alt="">
+                        </div>
+                        <div class="portfolio-text bg-primary">
+                            <h4 class="font-weight-bold mb-4">Puerto Compostela</h4>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="btn btn-sm btn-secondary m-1" href="puertocompostela.html">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item third">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img">
+                            <img class="img-fluid w-100" src="imagenes/logos empresas/logoSSalud.jpg" alt="">
+                        </div>
+                        <div class="portfolio-text bg-primary">
+                            <h4 class="font-weight-bold mb-4">Otra empresa</h4>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="btn btn-sm btn-secondary m-1" href="sancorsalud.html">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+		<!-- Portfolio End -->
+
+		<!-- Footer Start -->
 		<div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
 			<div class="row pt-5">
 				<div class="col-lg-3 col-md-6 mb-5">
@@ -183,8 +269,7 @@
 						></a>
 						<a
 							class="btn btn-social btn-dark mr-2"
-							href="https://www.linkedin.com"
-							><i class="fab fa-linkedin-in"></i
+							href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i
 						></a>
 						<a class="btn btn-social btn-dark" href="https://www.instagram.com"
 							><i class="fab fa-instagram"></i
@@ -212,24 +297,6 @@
 						>
 					</div>
 				</div>
-				<br />
-				<!-- <div class="col-lg-3 col-md-6 mb-5">
-					<h4 class="font-weight-semi-bold text-primary mb-4">Newsletter</h4>
-					<p>Ingresa tu correo electronico para recibir novedades</p>
-					<div class="w-100">
-						<div class="input-group">
-							<input
-								type="text"
-								class="form-control border-0"
-								style="padding: 25px"
-								placeholder="Your Email"
-							/>
-							<div class="input-group-append">
-								<button class="btn btn-primary px-4">Sign Up</button>
-							</div>
-						</div>
-					</div>
-				</div> -->
 			</div>
 		</div>
 		<div
@@ -256,16 +323,16 @@
 		<!-- JavaScript Libraries -->
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-		<script src="js/easing.min.js"></script>
-		<script src="js/waypoints.min.js"></script>
-		<script src="js/counterup.min.js"></script>
-		<script src="js/owlcarousel/owl.carousel.min.js"></script>
-		<script src="js/isotope.pkgd.min.js"></script>
-		<script src="js/lightbox/js/lightbox.min.js"></script>
+		<script src="lib/easing/easing.min.js"></script>
+		<script src="lib/waypoints/waypoints.min.js"></script>
+		<script src="lib/counterup/counterup.min.js"></script>
+		<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+		<script src="lib/isotope/isotope.pkgd.min.js"></script>
+		<script src="lib/lightbox/js/lightbox.min.js"></script>
 
 		<!-- Contact Javascript File -->
-		<script src="js/jqBootstrapValidation.min.js"></script>
-		<script src="js/contact.js"></script>
+		<script src="mail/jqBootstrapValidation.min.js"></script>
+		<script src="mail/contact.js"></script>
 
 		<!-- Template Javascript -->
 		<script src="js/main.js"></script>
