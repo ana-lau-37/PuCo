@@ -62,32 +62,35 @@
 	});
 
 	// Service carousel
-	$(".service-carousel").owlCarousel({
-		autoplay: true,
-		smartSpeed: 1500,
-		margin: 30,
-		dots: false,
-		loop: true,
-		nav: true,
-		navText: [
-			'<i class="fa fa-angle-left" aria-hidden="true"></i>',
-			'<i class="fa fa-angle-right" aria-hidden="true"></i>',
-		],
-		responsive: {
-			0: {
-				items: 1,
-			},
-			576: {
-				items: 1,
-			},
-			768: {
-				items: 2,
-			},
-			992: {
-				items: 2,
-			},
-		},
-	});
+$(".service-carousel").owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 2000, // Cambia de slide cada 3 segundos (ajusta si quieres más rápido)
+    autoplaySpeed: 800, // Hace que la transición sea más rápida (0.8 segundos)
+    smartSpeed: 1000, // Controla la suavidad de la animación (puedes bajarlo un poco)
+    margin: 30,
+    dots: false,
+    loop: true,
+    nav: true,
+    navText: [
+        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+    ],
+    responsive: {
+        0: {
+            items: 1,
+        },
+        576: {
+            items: 1,
+        },
+        768: {
+            items: 2,
+        },
+        992: {
+            items: 2,
+        },
+    },
+});
+
 
 	// Portfolio isotope and filter
 	var portfolioIsotope = $(".portfolio-container").isotope({
@@ -137,4 +140,18 @@
 		items: 1,
 		loop: true,
 	});
+	// Testimonials carousel
+$(".testimonial-carousel").owlCarousel({
+    autoplay: true,
+    smartSpeed: 2000,
+    items: 1,
+    loop: true,
+});
+
+// Bootstrap Header Carousel
+$('#header-carousel').carousel({
+    interval: 2000, // Cambia cada 1 segundo
+    ride: 'carousel' // Activa el carrusel automáticamente
+});
 })(jQuery);
+
