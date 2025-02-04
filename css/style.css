@@ -233,7 +233,7 @@ a {
 }
 
 a:hover {
-	color: #1fdaa8;
+	color: #dedede;
 	text-decoration: underline;
 }
 
@@ -637,6 +637,12 @@ mark,
 .img-fluid {
 	max-width: 100%;
 	height: auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100vh; /* O ajustalo según lo que necesites */
+    object-fit: cover;
 }
 
 .img-thumbnail {
@@ -4042,7 +4048,7 @@ input[type="button"].btn-block {
 .custom-switch
 	.custom-control-input:disabled:checked
 	~ .custom-control-label::before {
-	background-color: rgba(255, 198, 0, 0.5);
+	background-color:#dedede;
 }
 
 .custom-select {
@@ -6600,8 +6606,12 @@ a.close.disabled {
 @media (prefers-reduced-motion: reduce) {
 	.carousel-item {
 		transition: none;
+		height: 100vh;
 	}
 }
+
+
+
 
 .carousel-item.active,
 .carousel-item-next,
@@ -7100,7 +7110,7 @@ button.bg-dark:focus {
 /* Hace que solo las imágenes del carrusel tengan el mismo tamaño */
 .carousel-item-custom img {
     width: 100%;
-    height: 200px; /* Ajusta la altura si es necesario */
+    height: 300px; /* Ajusta la altura si es necesario */
     object-fit: cover;
 }
 
@@ -10378,6 +10388,10 @@ h6,
 	.carousel-indicators li {
 		width: 15px;
 		height: 15px;
+	}
+	.carousel-item img {
+        max-height: 60vh; /* Limita la altura de la imagen en pantallas medianas */
+    }
 	}
 }
 

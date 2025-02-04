@@ -134,7 +134,7 @@ $(".service-carousel").owlCarousel({
 	});
 
 	// Testimonials carousel
-	$(".testimonial-carousel").owlCarousel({
+/* 	$(".testimonial-carousel").owlCarousel({
 		autoplay: true,
 		smartSpeed: 1000,
 		items: 1,
@@ -146,7 +146,7 @@ $(".testimonial-carousel").owlCarousel({
     smartSpeed: 2000,
     items: 1,
     loop: true,
-});
+}); */
 
 // Bootstrap Header Carousel
 $('#header-carousel').carousel({
