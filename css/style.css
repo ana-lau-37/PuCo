@@ -2946,7 +2946,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary:hover {
-	color: #212529;
+	color: #593C8F;
 	background-color: #ffc600;
 	border-color: #ffc600;
 }
@@ -10059,7 +10059,7 @@ a.text-primary:focus {
 
 a.text-secondary:hover,
 a.text-secondary:focus {
-	color: #156121 !important;
+	color: var(--primary) !important;
 }
 
 .text-success {
@@ -10627,7 +10627,7 @@ h6,
 	border-radius: 75px;
 }
 
-.testimonial-carousel .owl-dot {
+/* .testimonial-carousel .owl-dot {
 	display: inline-block;
 	margin: 0 5px;
 	width: 12px;
@@ -10638,7 +10638,7 @@ h6,
 
 .testimonial-carousel .owl-dot.active {
 	background: #ffc600;
-}
+} */
 
 .blog-date {
 	position: absolute;
