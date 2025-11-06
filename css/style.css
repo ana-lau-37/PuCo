@@ -76,12 +76,24 @@ html {
 	color: var(--secondary) !important;
 }
 .fa-phone-alt {
-	color: var(--primary) !important;
+    color: var(--primary) !important;
+    transform: scaleX(-1) !important;
+    display: inline-block;
 }
 
-.fa-angle-right .fa-angle-left {
-	color: var(--primary) !important;
+
+.phone-right::before {
+    transform: scaleX(-1);
+    display: inline-block;
 }
+
+
+.fa-angle-right,
+.fa-angle-left {
+    color: var(--primary) !important;
+}
+
+
 
 .logo {
 	float: left;
@@ -6207,7 +6219,7 @@ a.close.disabled {
 	padding: 1rem;
 }
 
-.nobitFooter {
+.analauFooter {
 	color: var(--primary);
 }
 
